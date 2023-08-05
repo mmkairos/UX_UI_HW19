@@ -1,0 +1,187 @@
+.body {
+    background-color: whitesmoke
+}
+
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top right;
+    padding: 10px 10px 0px 10px;  
+}
+
+.topmenu {
+    float: right;
+}
+
+.navigation {
+    background-color: purple;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    width: 10%;
+    padding: -1%;
+    text-align: center;
+    float: left;
+
+}
+
+.words {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.name {
+    vertical-align: auto;
+    color: white;
+    font-size: 32px;
+ }
+
+ nav {
+    width: 80%;
+    padding: 1%;
+    text-align: right;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.hero {
+    margin: auto;
+}
+.image {
+    float: left;
+    padding-top: 5%;
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+}
+/*My Skills*/
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+}
+#mySkills {
+    background-color: white;
+    padding: 5%;
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+#myWork-Grid {
+    display: grid;
+    grid-template-rows: max-content 3fr 3fr 3fr max-content;
+    font-family: sans-serif;
+    gap: 10%;
+    background-color: #EBCDC4;
+    justify-items: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+}
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: sans-serif;
+    margin: 0% 10% 0% 10%;
+    padding: 10% 0% 0% 10%;
+}
+#viewProject {
+    background-color: #EBCDC4;
+    box-shadow: 3px 3px 3px #888888;
+    align-self: self-start;
+}
+.project-image {
+    padding: 5% 5% 5% 5%;
+    object-fit: scale-down;
+}        
+.skillCard {
+    width: 100%;
+}
+.image {
+    width: 300px;
+    height: 300px;
+    float: right;
+    padding-right: 100px;
+}
+.content {
+    width: 500px;
+    text-align: left;
+    padding-top: 10%;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    float: left;
+}
+.button {
+    font-size: 22px;
+    padding-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+footer {
+    background-color: purple;
+    width: 100%;
+    bottom: 0px;
+    text-align: left;
+    color: white;
+    position: fixed;
+    font-weight: bold;
+}
+.footerContent {
+    font-size: 32px;
+    padding-top: .25%;
+    padding-bottom: .25%;
+}
+html, body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+@media only screen and (max-width: 600px) {
+    #flexContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        grid-template-rows: 300px 300px 300px;
+        display: grid;
+        grid-template-areas: "USER RESEARCH PROTOTYPING INFORMATIONAL ARCHITECTURE";
+    }
+
+}
